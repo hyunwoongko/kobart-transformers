@@ -2,9 +2,9 @@
 - SKT에서 공개한 KoBart를 편하게 사용할 수 있게 transformers로 포팅하였습니다.
 <br><br>
 
-### Install
+### Install (Optional)
 - 설치 없이 `Model/Tokenizer.from_pretrained("hyunwoongko/kobart")`를 사용해도 동일하게 작동합니다.
-- `hyunwoongko/kobart`가 기억나지 않으실 분들을 위해 pip installable하게 작성하였습니다.
+- `hyunwoongko/kobart`가 기억나지 않으실 분들을 위해 pip installable하게 작성하였으니 참고바랍니다.
 ```consol
 pip install kobart-transformers
 ```
@@ -15,7 +15,11 @@ pip install kobart-transformers
 - `PretrainedTokenizerFast.from_pretrained("hyunwoongko/kobart")`와 동일합니다.
 ```python
 >>> from kobart_transformers import get_kobart_tokenizer
+>>> # from transformers import PretrainedTokenizerFast
+
 >>> kobart_tokenizer = get_kobart_tokenizer()
+>>> # kobart_tokenizer = PretrainedTokenizerFast.from_pretrained("hyunwoongko/kobart")
+
 >>> kobart_tokenizer.tokenize("안녕하세요. 한국어 BART 입니다.🤣:)l^o")
 ['▁안녕하', '세요.', '▁한국어', '▁B', 'A', 'R', 'T', '▁입', '니다.', '🤣', ':)', 'l^o']
 ```
@@ -26,8 +30,14 @@ pip install kobart-transformers
 - `BartModel.from_pretrained("hyunwoongko/kobart")와 동일합니다.`
 ```python
 >>> from kobart import get_kobart_model, get_kobart_tokenizer
+>>> # from transformers import BartModel, PretrainedTokenizerFast
+
 >>> kobart_tokenizer = get_kobart_tokenizer()
+>>> # kobart_tokenizer = PretrainedTokenizerFast.from_pretrained("hyunwoongko/kobart")
+
 >>> model = get_kobart_model()
+>>> # model = BartModel.from_pretrained("hyunwoongko/kobart")
+
 >>> inputs = kobart_tokenizer(['안녕하세요.'], return_tensors='pt')
 >>> model(inputs['input_ids'])
 Seq2SeqModelOutput(last_hidden_state=tensor([[[-0.4488, -4.3651,  3.2349,  ...,  5.8916,  4.0497,  3.5468],
