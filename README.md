@@ -44,7 +44,7 @@ Seq2SeqModelOutput(last_hidden_state=tensor([[[-0.4488, -4.3651,  3.2349,  ..., 
 ```python
 from kobart import get_kobart_tokenizer
 kobart_tokenizer = get_kobart_tokenizer()
-kobart_tokenizer("한국어 BART 모델을 소개합니다", truncation=True, padding=True)
+kobart_tokenizer(["한국어", "BART 모델을", "소개합니다."], truncation=True, padding=True)
 {
 'input_ids': [[28324, 3, 3, 3, 3], [15085, 264, 281, 283, 24224], [15630, 20357, 3, 3, 3]], 
 'token_type_ids': [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]], 
