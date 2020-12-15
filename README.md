@@ -40,7 +40,7 @@ Seq2SeqModelOutput(last_hidden_state=tensor([[[-0.4488, -4.3651,  3.2349,  ..., 
 <br>
 
 ### Update Notes
-- 0.1 : `pad` 토큰이 설정되지 않은 에러를 해결하였습니다.
+- version 0.1 : `pad` 토큰이 설정되지 않은 에러를 해결하였습니다.
 ```python
 from kobart import get_kobart_tokenizer
 kobart_tokenizer = get_kobart_tokenizer()
