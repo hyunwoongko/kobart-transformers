@@ -7,7 +7,7 @@
 ```consol
 pip install kobart-transformers
 ```
-<br><br>
+<br>
 
 ### Tokenizer
 - `PretrainedTokenizerFast`를 이용하여 구현되었습니다.
@@ -18,7 +18,7 @@ pip install kobart-transformers
 >>> kobart_tokenizer.tokenize("안녕하세요. 한국어 BART 입니다.🤣:)l^o")
 ['▁안녕하', '세요.', '▁한국어', '▁B', 'A', 'R', 'T', '▁입', '니다.', '🤣', ':)', 'l^o']
 ```
-<br><br>
+<br>
 
 ### Model
 - `BartModel`을 이용하여 구현되었습니다.
@@ -35,7 +35,7 @@ Seq2SeqModelOutput(last_hidden_state=tensor([[[-0.4488, -4.3651,  3.2349,  ..., 
          [ 0.4538, -0.2948,  0.2556,  ..., -0.0442,  0.6858,  0.4372]]],
        grad_fn=<TransposeBackward0>), encoder_hidden_states=None, encoder_attentions=None)
 ```
-<br><br>
+<br>
 
 ### Reference
 - [SKT KoBart](https://github.com/SKT-AI/KoBART)
