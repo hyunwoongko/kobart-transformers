@@ -29,7 +29,7 @@ pip install kobart-transformers
 - `BartModel`을 이용하여 구현되었습니다.
 - `BartModel.from_pretrained("hyunwoongko/kobart")와 동일합니다.`
 ```python
->>> from kobart import get_kobart_model, get_kobart_tokenizer
+>>> from kobart_transformers import get_kobart_model, get_kobart_tokenizer
 >>> # from transformers import BartModel, PretrainedTokenizerFast
 
 >>> kobart_tokenizer = get_kobart_tokenizer()
