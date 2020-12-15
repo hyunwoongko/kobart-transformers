@@ -3,8 +3,6 @@
 <br><br>
 
 ### Install (Optional)
-- 설치 없이 `Model/Tokenizer.from_pretrained("hyunwoongko/kobart")`를 사용해도 동일하게 작동합니다.
-- +) `hyunwoongko/kobart`가 기억나지 않으실 누군가를 위해 제공하는 패키지이니 설치는 선택사항입니다.
 ```consol
 pip install kobart-transformers
 ```
@@ -12,14 +10,9 @@ pip install kobart-transformers
 
 ### Tokenizer
 - `PreTrainedTokenizerFast`를 이용하여 구현되었습니다.
-- `PreTrainedTokenizerFast.from_pretrained("hyunwoongko/kobart")`와 동일합니다.
 ```python
 >>> from kobart_transformers import get_kobart_tokenizer
->>> # from transformers import PreTrainedTokenizerFast
-
 >>> kobart_tokenizer = get_kobart_tokenizer()
->>> # kobart_tokenizer = PreTrainedTokenizerFast.from_pretrained("hyunwoongko/kobart")
-
 >>> kobart_tokenizer.tokenize("안녕하세요. 한국어 BART 입니다.🤣:)l^o")
 ['▁안녕하', '세요.', '▁한국어', '▁B', 'A', 'R', 'T', '▁입', '니다.', '🤣', ':)', 'l^o']
 ```
@@ -30,11 +23,9 @@ pip install kobart-transformers
 - `BartModel.from_pretrained("hyunwoongko/kobart")`와 동일합니다.
 ```python
 >>> from kobart_transformers import get_kobart_model, get_kobart_tokenizer
->>> # from transformers import BartModel, PretrainedTokenizerFast
+>>> # from transformers import BartModel
 
 >>> kobart_tokenizer = get_kobart_tokenizer()
->>> # kobart_tokenizer = PreTrainedTokenizerFast.from_pretrained("hyunwoongko/kobart")
-
 >>> model = get_kobart_model()
 >>> # model = BartModel.from_pretrained("hyunwoongko/kobart")
 
