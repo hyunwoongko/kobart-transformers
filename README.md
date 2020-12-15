@@ -11,14 +11,14 @@ pip install kobart-transformers
 <br>
 
 ### Tokenizer
-- `PretrainedTokenizerFast`를 이용하여 구현되었습니다.
-- `PretrainedTokenizerFast.from_pretrained("hyunwoongko/kobart")`와 동일합니다.
+- `PreTrainedTokenizerFast`를 이용하여 구현되었습니다.
+- `PreTrainedTokenizerFast.from_pretrained("hyunwoongko/kobart")`와 동일합니다.
 ```python
 >>> from kobart_transformers import get_kobart_tokenizer
->>> # from transformers import PretrainedTokenizerFast
+>>> # from transformers import PreTrainedTokenizerFast
 
 >>> kobart_tokenizer = get_kobart_tokenizer()
->>> # kobart_tokenizer = PretrainedTokenizerFast.from_pretrained("hyunwoongko/kobart")
+>>> # kobart_tokenizer = PreTrainedTokenizerFast.from_pretrained("hyunwoongko/kobart")
 
 >>> kobart_tokenizer.tokenize("안녕하세요. 한국어 BART 입니다.🤣:)l^o")
 ['▁안녕하', '세요.', '▁한국어', '▁B', 'A', 'R', 'T', '▁입', '니다.', '🤣', ':)', 'l^o']
@@ -33,7 +33,7 @@ pip install kobart-transformers
 >>> # from transformers import BartModel, PretrainedTokenizerFast
 
 >>> kobart_tokenizer = get_kobart_tokenizer()
->>> # kobart_tokenizer = PretrainedTokenizerFast.from_pretrained("hyunwoongko/kobart")
+>>> # kobart_tokenizer = PreTrainedTokenizerFast.from_pretrained("hyunwoongko/kobart")
 
 >>> model = get_kobart_model()
 >>> # model = BartModel.from_pretrained("hyunwoongko/kobart")
