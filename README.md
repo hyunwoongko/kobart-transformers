@@ -1,5 +1,5 @@
 ## KoBart-Transformers
-- SKT에서 공개한 KoBart를 편하게 사용할 수 있게 transformers로 포팅하였습니다.
+- SKT에서 공개한 KoBart를 편리하게 사용할 수 있게 transformers로 포팅하였습니다.
 <br><br>
 
 ### Install (Optional)
