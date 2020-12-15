@@ -4,7 +4,7 @@
 
 ### Install (Optional)
 - 설치 없이 `Model/Tokenizer.from_pretrained("hyunwoongko/kobart")`를 사용해도 동일하게 작동합니다.
-- +) 여담이지만 `hyunwoongko/kobart`가 기억나지 않으실 누군가를 위해 패키지로도 만들었습니다...ㅎㅎ
+- +) 여담이지만 `hyunwoongko/kobart`가 기억나지 않으실 누군가를 위해 패키지로도 제공하도록 니다.
 ```consol
 pip install kobart-transformers
 ```
