@@ -1,5 +1,5 @@
 ## KoBart-Transformers
-- SKT에서 공개한 KoBart 모델을 편하게 사용할 수 있게 huggingface transformers로 포팅하였습니다.
+- SKT에서 공개한 KoBart를 편하게 사용할 수 있게 transformers로 포팅하였습니다.
 <br><br>
 
 ### Install
@@ -18,7 +18,7 @@ pip install kobart-transformers
 >>> kobart_tokenizer.tokenize("안녕하세요. 한국어 BART 입니다.🤣:)l^o")
 ['▁안녕하', '세요.', '▁한국어', '▁B', 'A', 'R', 'T', '▁입', '니다.', '🤣', ':)', 'l^o']
 ```
-
+<br><br>
 
 ### Model
 - `BartModel`을 이용하여 구현되었습니다.
