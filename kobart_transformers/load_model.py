@@ -1,4 +1,4 @@
-from transformers import BartModel, BartTokenizerFast
+from transformers import BartModel, PreTrainedTokenizerFast
 
 
 def get_kobart_model():
@@ -6,7 +6,7 @@ def get_kobart_model():
 
 
 def get_kobart_tokenizer():
-    tokenizer = BartTokenizerFast.from_pretrained("hyunwoongko/kobart")
+    tokenizer = PreTrainedTokenizerFast.from_pretrained("hyunwoongko/kobart")
 
     tokenizer.pad_token = "<pad>"
     tokenizer.bos_token = "<s>"
