@@ -40,7 +40,7 @@ Seq2SeqModelOutput(last_hidden_state=tensor([[[-0.4488, -4.3651,  3.2349,  ..., 
 <br>
 
 ### For Seq2Seq Training
-- seq2seq 학습시에는 아래와 같이 `get_kobart_for_conditional_generation()`를 이용합니다.
+- seq2seq 학습시에는 아래와 같이 `get_kobart_for_conditional_generation()`을 이용합니다.
 - `BartForConditionalGeneration.from_pretrained("hyunwoongko/kobart")`와 동일합니다.
 ```python
 >>> from kobart_transformers import get_kobart_for_conditional_generation
