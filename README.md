@@ -44,7 +44,7 @@ Seq2SeqModelOutput(last_hidden_state=tensor([[[-0.4488, -4.3651,  3.2349,  ..., 
 - `BartForConditionalGeneration.from_pretrained("hyunwoongko/kobart")`와 동일합니다.
 ```python
 >>> from kobart_transformers import get_kobart_for_conditional_generation
->>> # from transformers import BartModel
+>>> # from transformers import BartForConditionalGeneration
 
 >>> model = get_kobart_for_conditional_generation()
 >>> # model = BartForConditionalGeneration.from_pretrained("hyunwoongko/kobart")
