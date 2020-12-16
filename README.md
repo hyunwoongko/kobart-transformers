@@ -3,7 +3,7 @@
 <br><br>
 
 ### Install
-```consol
+```console
 pip install kobart-transformers
 ```
 <br>
