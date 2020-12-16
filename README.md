@@ -39,7 +39,19 @@ Seq2SeqModelOutput(last_hidden_state=tensor([[[-0.4488, -4.3651,  3.2349,  ..., 
 ```
 <br>
 
-### Update Notes
+### For Seq2Seq Training
+- seq2seq 학습시에는 아래와 같이 `get_kobart_for_conditional_generation()`를 이용합니다.
+- `BartForConditionalGeneration.from_pretrained("hyunwoongko/kobart")`와 동일합니다.
+```python
+>>> from kobart_transformers import get_kobart_for_conditional_generation
+>>> # from transformers import BartModel
+
+>>> model = get_kobart_for_conditional_generation()
+>>> # model = BartForConditionalGeneration.from_pretrained("hyunwoongko/kobart")
+```
+<br>
+
+### Bugfix Notes
 - version 0.1 : `pad` 토큰이 설정되지 않은 에러를 해결하였습니다.
 ```python
 from kobart import get_kobart_tokenizer
