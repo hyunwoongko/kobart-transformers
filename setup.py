@@ -15,7 +15,7 @@ setup(
     version='0.1.3',
     author='Hyunwoong Ko',
     author_email='kevin.woong@kakaobrain.com',
-    url='https://github.com/hyunwoongko/kss-python',
+    url='https://github.com/hyunwoongko/kobart-transformers',
     license='BSD 3-Clause "New" or "Revised" License',
     description='Kobart model on huggingface transformers',
     long_description_content_type='text/markdown',
