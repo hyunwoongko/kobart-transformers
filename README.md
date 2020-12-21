@@ -51,8 +51,9 @@ Seq2SeqModelOutput(last_hidden_state=tensor([[[-0.4488, -4.3651,  3.2349,  ..., 
 ```
 <br>
 
-### Bugfix Notes
-- version 0.1 : `pad` 토큰이 설정되지 않은 에러를 해결하였습니다.
+### Updates Notes
+#### version 0.1
+- `pad` 토큰이 설정되지 않은 에러를 해결하였습니다.
 ```python
 from kobart import get_kobart_tokenizer
 kobart_tokenizer = get_kobart_tokenizer()
@@ -63,6 +64,8 @@ kobart_tokenizer(["한국어", "BART 모델을", "소개합니다."], truncation
 'attention_mask': [[1, 0, 0, 0, 0], [1, 1, 1, 1, 1], [1, 1, 0, 0, 0]]
 }
 ```
+#### version 0.1.3
+- `get_kobart_for_conditional_generation()`를 `__init__.py`에 등록하였습니다.
 <br>
 
 ### Reference
