@@ -76,6 +76,7 @@ kobart_tokenizer(["한국어", "BART 모델을", "소개합니다."], truncation
 #### version 0.1.4
 - 누락되었던 `special_tokens_map.json`을 추가하였습니다.
 - 이제 `pip install` 없이 KoBART를 이용할 수 있습니다.
+- thanks to [bernardscumm](https://github.com/bernardscumm)
 <br>
 
 ### Reference
