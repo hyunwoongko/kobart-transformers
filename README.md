@@ -1,8 +1,9 @@
-## KoBart-Transformers
-- SKT에서 공개한 KoBart를 편리하게 사용할 수 있게 transformers로 포팅하였습니다.
+## KoBART-Transformers
+- SKT에서 공개한 KoBART를 편리하게 사용할 수 있게 transformers로 포팅하였습니다.
 <br><br>
 
-### Install
+### Install (Optional)
+- `BartModel`과 `PreTrainedTokenizerFast`를 이용하면 설치하실 필요 없습니다.
 ```console
 pip install kobart-transformers
 ```
@@ -10,9 +11,14 @@ pip install kobart-transformers
 
 ### Tokenizer
 - `PreTrainedTokenizerFast`를 이용하여 구현되었습니다.
+- `PreTrainedTokenizerFast.from_pretrained("hyunwoongko/kobart")`와 동일합니다.
 ```python
 >>> from kobart_transformers import get_kobart_tokenizer
+>>> # from transformers import PreTrainedTokenizerFast
+
 >>> kobart_tokenizer = get_kobart_tokenizer()
+>>> # kobart_tokenizer = PreTrainedTokenizerFast.from_pretrained("hyunwoongko/kobart")
+
 >>> kobart_tokenizer.tokenize("안녕하세요. 한국어 BART 입니다.🤣:)l^o")
 ['▁안녕하', '세요.', '▁한국어', '▁B', 'A', 'R', 'T', '▁입', '니다.', '🤣', ':)', 'l^o']
 ```
@@ -66,8 +72,12 @@ kobart_tokenizer(["한국어", "BART 모델을", "소개합니다."], truncation
 ```
 #### version 0.1.3
 - `get_kobart_for_conditional_generation()`를 `__init__.py`에 등록하였습니다.
+
+#### version 0.1.4
+- 누락되었던 `special_tokens_map.json`을 추가하였습니다.
+- 이제 `pip install` 없이 KoBART를 이용할 수 있습니다.
 <br>
 
 ### Reference
-- [SKT KoBart](https://github.com/SKT-AI/KoBART)
+- [SKT KoBART](https://github.com/SKT-AI/KoBART)
 - [Huggingface Transformers](https://github.com/huggingface/transformers)
