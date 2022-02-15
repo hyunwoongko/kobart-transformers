@@ -79,7 +79,7 @@ kobart_tokenizer(["한국어", "BART 모델을", "소개합니다."], truncation
 - thanks to [bernardscumm](https://github.com/bernardscumm)
 
 #### version 0.1.5
-- tokenizer 사용시 <s>, </s>를 자동으로 붙게끔 템플릿 프로세싱을 추가했습니다.
+- tokenizer 사용시 `<s>`, `</s>`가 자동으로 붙게끔 템플릿 프로세싱을 추가했습니다.
 
 <br>
 
